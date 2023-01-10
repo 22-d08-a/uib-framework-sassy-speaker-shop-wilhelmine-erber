@@ -1,0 +1,30 @@
+
+@mixin article-style{
+    height: 40rem;
+    width: 30rem;
+    padding: 30px;
+    font-size: 12px;
+    color: white;
+    background-size: cover;
+    background-position: center;
+}
+
+@mixin card-heading{
+  margin: 4rem 0;
+  padding-right: 4rem;
+  text-shadow: -5px 0px 20px rgb(47, 47, 47);
+
+}
+
+
+@mixin card-icon {
+    background: white;
+    border-radius: 50%;
+    height: 2rem;
+    padding: 5px;
+    box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.25);
+  
+    &:hover {
+      box-shadow: 0 0 0 5px rgba(255, 255, 255, 1);
+    }
+  }

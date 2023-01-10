@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+@import "mixins";
+
+:root{
+    font-size: 10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.4rem;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+
+    div{
+        display: flex;
+        align-items: center;
+        img{
+            height: 2rem;
+        }
+        p{
+            margin-left: 15px;
+        }
+    }
+
+    nav{
+        ul{
+            display: flex;
+            gap: 1.5rem;
+
+            li{
+                list-style: none;
+                
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+main{
+    .hero{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        padding: 5rem 3rem;
+
+        h1{
+            font-weight: bold;
+        }
+
+        .intro{
+            margin: 1.5rem 0 4rem 0;
+            font-size: 1.6rem;
+            font-weight: 200;
+        }
+
+        div{
+            a{
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                background-color: black;
+                padding: 0 .8rem;
+                display: flex;
+                gap: 0.33rem;
+                align-items: center;
+                width: fit-content;
+            }
+        }
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    padding: 3rem;
+
+    .article-1{
+        background-image: url(./images/white-box.jpg);
+        @include article-style;
+        h2{
+            @include card-heading;
+        }
+        img{
+            @include card-icon;
+        }
+    }
+    .article-2{
+        background-image: url(./images/room.jpg);
+
+        @include article-style;
+        background-position: left center;
+
+        h2{
+            @include card-heading;
+        }
+        img{
+            @include card-icon;
+        }
+    }
+    .article-3{
+        background-image: url(./images/black-white.jpg);
+        @include article-style;
+        h2{
+            @include card-heading;
+        }
+        img{
+            @include card-icon;
+        }
+    }
+}
+
+footer{
+    display: flex;
+    color: gray;
+    padding: 2.5rem;
+    justify-content: center;
+    font-size: 1.4rem;
+}

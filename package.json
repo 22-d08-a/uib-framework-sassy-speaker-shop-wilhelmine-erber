@@ -1,0 +1,19 @@
+{
+  "name": "uib-framework-sassy-speaker-shop-wilhelmine-erber",
+  "version": "1.0.0",
+  "description": "Recreate the speaker-shop website, this time utilising sass and mixins. Make use of the boilerplate code in the index.html and the assets in the images folder.",
+  "main": "index.js",
+  "scripts": {
+    "compile": "sass styles.scss styles.css --no-source-map --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/22-d08-a/uib-framework-sassy-speaker-shop-wilhelmine-erber.git"
+  },
+  "author": "Wilhelmine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/22-d08-a/uib-framework-sassy-speaker-shop-wilhelmine-erber/issues"
+  },
+  "homepage": "https://github.com/22-d08-a/uib-framework-sassy-speaker-shop-wilhelmine-erber#readme"
+}
